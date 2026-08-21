@@ -19,7 +19,7 @@ class Solution {
                     }
                     j++;
             }
-            // System.out.println("count = "+count +"i = "+i + " gcd = "+gcd +" den = "+den);
+            
             hm.get(count).add(lcm);
          }
     }
@@ -54,11 +54,9 @@ class Solution {
         for(int num: coins){
             if(num!=-1){
                 nums[Neg++] = num;
-                // System.out.print(num+" ");
             }
         }
         genSubSets(nums,len);
-        // System.out.println(hm);
         long l = nums[0];
         long r = 1L*nums[0]*k;
         long ans = 0;
